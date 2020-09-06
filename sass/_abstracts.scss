@@ -1,0 +1,36 @@
+// VARIABLES
+$color-primary: #f2faef;
+$color-secondary: #457b9d;
+$color-accent: #e63946;
+// $color-accent: #a8dadc;
+$color-black: #555;
+$color-white: #f2f2f2;
+
+
+
+// UTILITY CLASSES
+
+// PADDING
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+// MARGIN
+
+
+
+// MIXINS
+@mixin link {
+  text-decoration: none;
+  color: $color-secondary;
+
+  &:hover {
+    color: $color-accent;
+  }
+}

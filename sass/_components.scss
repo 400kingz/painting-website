@@ -1,0 +1,22 @@
+// BUTTON
+.btn {
+  // @extend .link;
+  
+  padding: 0.5em 2em;
+  font-weight: 600;
+  border: 3px solid $color-secondary;
+  background: $color-secondary;
+  border-radius: 100px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-primary;
+  text-align: center;
+  transition: all ease-out 0.25s;
+
+  &:hover {
+    // background: $color-secondary;
+    color: #dae1d7;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    transform: translateY(-2px);
+  }
+}
