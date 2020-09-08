@@ -1,7 +1,7 @@
 // VARIABLES
 $color-primary: #f2faef;
 $color-secondary: #457b9d;
-$color-accent: #e63946;
+$color-accent: #C08552;
 // $color-accent: #a8dadc;
 $color-black: #555;
 $color-white: #f2f2f2;
@@ -9,6 +9,13 @@ $color-white: #f2f2f2;
 
 
 // UTILITY CLASSES
+.reveal {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
 
 // PADDING
 .px-1 {
@@ -27,10 +34,22 @@ $color-white: #f2f2f2;
 
 // MIXINS
 @mixin link {
-  text-decoration: none;
-  color: $color-secondary;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $color-secondary;
+    transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  &:focus {
+    color:  $color-accent;
+  }
 
   &:hover {
+    color: $color-accent;
+  }
+
+  &:active {
     color: $color-accent;
   }
 }

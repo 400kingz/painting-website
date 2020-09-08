@@ -2,21 +2,30 @@
 .btn {
   // @extend .link;
   
-  padding: 0.5em 2em;
+  padding: .5em 1.5em;
+  cursor: pointer;
   font-weight: 600;
-  border: 3px solid $color-secondary;
-  background: $color-secondary;
+  border: 4px solid $color-secondary;
+  background: $color-primary;
   border-radius: 100px;
   text-transform: uppercase;
   text-decoration: none;
-  color: $color-primary;
   text-align: center;
-  transition: all ease-out 0.25s;
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+
+  &:link,
+  &:visited {
+    color: $color-secondary;
+  }
+    
+  &:focus {
+    color: $color-accent;
+  }
 
   &:hover {
-    // background: $color-secondary;
-    color: #dae1d7;
+    background: $color-secondary;
+    color: $color-primary;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-    transform: translateY(-2px);
   }
 }

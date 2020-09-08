@@ -10,13 +10,24 @@
   <nav role="navigation" aria-label="main menu">
     <ul class="navbar">
       <div class="navbar__left">
-        <li><a href="./index.html" class="navbar__brand link">Painting Co.</a></li>
+        <li><a href="./" class="navbar__brand">Painting Co.</a></li>
+        <svg class="navbar__menu-icon" id="burger-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg class="navbar__menu-icon hidden" id="closeMenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
       </div>
-      <div class="navbar__right"><li><a href="#" class="navbar__link link">About Us</a></li>
-      <li><a href="#" class="navbar__link link">Our Services</a></li>
-      <li><a href="#" class="navbar__link link">Past Works</a></a></li></div>
-      <li><a href="#" class="btn">Get a free estimate</a></a></li></div>
+      <div class="navbar__right hidden" id="navbarRight">
+        <li><a href="#" class="navbar__link link">About Us</a></li>
+        <li><a href="#" class="navbar__link link">Our Services</a></li>
+        <li><a href="#" class="navbar__link link">Past Works</a></a></li>
+      </div>
+      <li><a href="#" class="btn">Get a free estimate</a></a></li>
     </ul>
   </nav>
+
+  <script src="./scripts/scripts.js"></script>
 </body>
 </html>
