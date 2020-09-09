@@ -98,3 +98,32 @@
     }
   }
 }
+
+// HERO LANDING PAGE
+.hero {
+  display: flex;
+  align-items: center;
+  height: 75vh;
+  max-width: 100%;
+  background: $color-primary;
+
+  &__text {
+    color: #333;
+    padding: 2rem;
+
+    &__header {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__image {
+    display: none;
+
+    @media screen and (min-width: 850px) {
+      display: block;
+      height: 3rem;
+      width: 100%;
+      max-width: 360px;
+    }
+  }
+}

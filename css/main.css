@@ -244,6 +244,40 @@ body {
   }
 }
 
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75vh;
+  max-width: 100%;
+  background: #f2faef;
+}
+
+.hero__text {
+  color: #333;
+  padding: 2rem;
+}
+
+.hero__text__header {
+  margin-bottom: 1.5rem;
+}
+
+.hero__image {
+  display: none;
+}
+
+@media screen and (min-width: 850px) {
+  .hero__image {
+    display: block;
+    height: 3rem;
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
 .btn {
   padding: .5em 1.5em;
   cursor: pointer;
@@ -471,5 +505,67 @@ body {
   .navbar__menu-icon {
     display: none;
   }
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75vh;
+  max-width: 100%;
+  background: #f2faef;
+}
+
+.hero__text {
+  color: #333;
+  padding: 2rem;
+}
+
+.hero__text__header {
+  margin-bottom: 1.5rem;
+}
+
+.hero__image {
+  display: none;
+}
+
+@media screen and (min-width: 850px) {
+  .hero__image {
+    display: block;
+    height: 3rem;
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1.125rem;
 }
 /*# sourceMappingURL=main.css.map */
