@@ -1,7 +1,9 @@
 // NAVIGATION
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: $color-primary;
-  max-width: 100%;
   padding: 2em 1.5em 1.5em 1.5em;
   font-size: 1rem;
   display: flex;
@@ -89,7 +91,8 @@
 
   &__menu-icon {
     @include link;
-    max-width: 2rem;
+    max-width: 1.75rem;
+    font-weight: 600;
     cursor: pointer;
     color: $color-secondary;
 
@@ -101,18 +104,33 @@
 
 // HERO LANDING PAGE
 .hero {
-  display: flex;
-  align-items: center;
-  height: 75vh;
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   max-width: 100%;
   background: $color-primary;
+  height: 75vh;
+  place-items: center;
+  
+  // @media screen and (min-width: 850px) {
+  //   height: 75vh;
+  // }
 
   &__text {
-    color: #333;
+    color: $color-black;
     padding: 2rem;
-
+    grid-column: 1 / 12;
+    grid-row: 2 / 12;
+    
+    @media screen and (min-width: 850px) {
+      grid-column: 2 / 7;
+      padding-left: 0;
+    }
+    
     &__header {
       margin-bottom: 1.5rem;
+      color: $color-black;
     }
   }
 
@@ -120,10 +138,63 @@
     display: none;
 
     @media screen and (min-width: 850px) {
-      display: block;
-      height: 3rem;
-      width: 100%;
-      max-width: 360px;
+      display: inline-block;
+      grid-column: 7 / 12;
+      grid-row: 1 / 12;
+      height: auto;
+      // width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__btn {
+    color: $color-secondary;
+    margin-top: 1.5rem;
+  }
+}
+
+// SERVICES SECTION
+.services {
+  background: $color-secondary;
+  color: $color-white;
+  padding: 3em;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__header {
+    margin-bottom: 1em;
+  }
+
+  &__overview {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+    // align-items: center;
+
+    @media screen and (min-width: 850px) {
+      flex-direction: row;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 10rem;
+
+      &__icon {
+        margin-bottom: 1rem;
+      }
     }
   }
 }
