@@ -169,11 +169,11 @@
   justify-content: center;
 
   @media screen and (min-width: 850px) {
-    height: 600px;
+    height: 35rem;
   }
 
   &__header {
-    margin-top: 0.5em;
+    margin-top: 1em;
     margin-bottom: 1em;
   }
 
@@ -244,7 +244,7 @@
   // }
 
   @media screen and (min-width: 850px) {
-    height: 70rem;
+    height: 80rem;
     display: grid;
     grid-template-rows: 192px repeat(11, 1fr);
     grid-template-columns: repeat(12, 1fr);
@@ -293,10 +293,56 @@
 .contact {
   color: $color-white;
   background: $color-secondary;
-  height: 45rem;
+  height: 50rem;
   max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+
+  &__header {
+    display: block;
+    text-align: center;
+    padding: 1.75em 0;
+  }
+
+  &__sub-header {
+    margin-bottom: 1rem;
+  }
+
+  & .btn {
+    margin-bottom: 1rem;
+  }
+
+  &__phone {
+    text-align: left;
+  }
+
+  &__info {
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  td {
+    text-align: right; 
+  }
+
+  @media screen and (min-width: 850px) {
+    height: 27.5rem;
+    display: grid;
+    place-items: center;
+
+    &__header {
+      padding: 0;
+      // padding-top: 0.5em;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 75%;
+    }
+  }
 }

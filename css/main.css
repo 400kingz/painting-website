@@ -337,12 +337,12 @@ body {
 
 @media screen and (min-width: 850px) {
   .services {
-    height: 600px;
+    height: 35rem;
   }
 }
 
 .services__header {
-  margin-top: 0.5em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
@@ -447,7 +447,7 @@ body {
 
 @media screen and (min-width: 850px) {
   .gallery {
-    height: 70rem;
+    height: 80rem;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 192px (1fr)[11];
@@ -513,21 +513,76 @@ body {
 .contact {
   color: #f2f2f2;
   background: #457b9d;
-  height: 45rem;
+  height: 50rem;
   max-width: 100%;
+}
+
+.contact__header {
+  display: block;
+  text-align: center;
+  padding: 1.75em 0;
+}
+
+.contact__sub-header {
+  margin-bottom: 1rem;
+}
+
+.contact .btn {
+  margin-bottom: 1rem;
+}
+
+.contact__phone {
+  text-align: left;
+}
+
+.contact__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 70%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  text-align: left;
+}
+
+.contact td {
+  text-align: right;
+}
+
+@media screen and (min-width: 850px) {
+  .contact {
+    height: 27.5rem;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .contact__header {
+    padding: 0;
+  }
+  .contact__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 75%;
+  }
 }
 
 .btn {
@@ -851,12 +906,12 @@ body {
 
 @media screen and (min-width: 850px) {
   .services {
-    height: 600px;
+    height: 35rem;
   }
 }
 
 .services__header {
-  margin-top: 0.5em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
@@ -961,7 +1016,7 @@ body {
 
 @media screen and (min-width: 850px) {
   .gallery {
-    height: 70rem;
+    height: 80rem;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 192px (1fr)[11];
@@ -1027,21 +1082,76 @@ body {
 .contact {
   color: #f2f2f2;
   background: #457b9d;
-  height: 45rem;
+  height: 50rem;
   max-width: 100%;
+}
+
+.contact__header {
+  display: block;
+  text-align: center;
+  padding: 1.75em 0;
+}
+
+.contact__sub-header {
+  margin-bottom: 1rem;
+}
+
+.contact .btn {
+  margin-bottom: 1rem;
+}
+
+.contact__phone {
+  text-align: left;
+}
+
+.contact__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 70%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  text-align: left;
+}
+
+.contact td {
+  text-align: right;
+}
+
+@media screen and (min-width: 850px) {
+  .contact {
+    height: 27.5rem;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .contact__header {
+    padding: 0;
+  }
+  .contact__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 75%;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
