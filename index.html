@@ -24,7 +24,7 @@
         <li><a href="#services" class="navbar__link link">Our Services</a></li>
         <li><a href="#works" class="navbar__link link">Past Works</a></a></li>
       </div>
-      <li><a href="#" class="btn">Get a free estimate</a></a></li>
+      <li><a href="#contact" class="btn">Get a free estimate</a></a></li>
     </ul>
   </nav>
 
@@ -32,8 +32,8 @@
     <section class="hero anchor" id="about">
       <div class="hero__text">
         <h1 class="hero__text__header">We Paint!</h1>
-        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit placeat voluptates praesentium expedita!</h3>
-        <button class="hero__btn btn">Check out our services</button>
+        <h3 class="hero__text__sub-header">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit placeat voluptates praesentium expedita!</h3>
+        <a href="#services" class="hero__btn btn">Check out our services</a>
       </div>
       <img src="./img/hero-image.jpg" class="hero__image" alt="4 paintbrushes with color">
     </section>
@@ -70,17 +70,24 @@
       <img src="./img/gallery__image__05.jpg" alt="" class="gallery__img--05">
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 class="contact__header">Contact Us</h2>
       <div class="contact__info">
-        <div class="contact__phone">
-          <h4 class="contact__sub-header">Free Quote</h4>
-          <button class="btn">CALL NOW</button>
-          <p>(123) 456 - 7890</p>
+        <div class="contact__group">
+          <div class="contact__phone">
+          	<h4 class="contact__sub-header">Get a Free Quote</h4>
+          	<button class="btn btn--block">CALL NOW</button>
+          	<p>(123) 456 - 7890</p>
+          </div>
+          <div class="contact__social">
+            <i class="fab fa-twitter fa-2x contact__social__icon"></i>
+            <i class="fab fa-instagram fa-2x contact__social__icon"></i>
+            <i class="fab fa-facebook-square fa-2x contact__social__icon"></i>
+          </div>
         </div>
         <div class="contact__address">
           <h4 class="contact__sub-header">Address</h4>
-          <button class="btn">GET DIRECTIONS</button>
+          <button class="btn btn--block">GET DIRECTIONS</button>
           <p>Random Drive</p>
           <p>Corpus Christi, TX 12345</p>
           <p>USA</p>
@@ -89,24 +96,32 @@
           <h4 class="contact__sub-header">Business Hours</h4>
           <table>
             <tr>
-              <th>Sunday</th>
-              <td>Closed</td>
+              <th>SUNDAY</th>
+              <td>CLOSED</td>
             </tr>
             <tr>
-              <th>Monday</th>
+              <th>MONDAY</th>
               <td>9am - 5pm</td>
             </tr>
             <tr>
-              <th>Tuesday</th>
+              <th>TUESDAY</th>
               <td>9am - 5pm</td>
             </tr>
             <tr>
-              <th>Wednesday</th>
+              <th>WEDNESDAY</th>
               <td>9am - 5pm</td>
             </tr>
             <tr>
-              <th>Thursday</th>
+              <th>THURSDAY</th>
               <td>9am - 5pm</td>
+            </tr>
+            <tr>
+              <th>FRIDAY</th>
+              <td>9am - 5pm</td>
+            </tr>
+            <tr>
+              <th>SATURDAY</th>
+              <td>CLOSED</td>
             </tr>
           </table>
         </div>

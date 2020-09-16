@@ -1,4 +1,5 @@
 // BUTTON
+
 .btn {
   // @extend .link;
   
@@ -13,7 +14,6 @@
   text-align: center;
   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 
-
   &:link,
   &:visited {
     color: $color-secondary;
@@ -27,5 +27,11 @@
     background: $color-secondary;
     color: $color-primary;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  }
+
+  &--block {
+    border-radius: 0;
+    padding: .75em 1.5em;
+    border: 3px solid $color-primary;
   }
 }
