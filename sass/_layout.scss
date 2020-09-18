@@ -340,6 +340,10 @@
 
   & .btn {
     margin-bottom: .75rem;
+
+    &:hover {
+      background: $color-primary;
+    }
   }
 
   &__info {

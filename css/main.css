@@ -23,14 +23,14 @@
   position: relative;
 }
 
-.anchor a {
+.anchor .target {
   position: absolute;
   left: 0px;
-  top: -88px;
+  top: -87.5px;
 }
 
 @media screen and (min-width: 850px) {
-  .anchor a {
+  .anchor .target {
     top: -111.6px;
   }
 }
@@ -595,6 +595,10 @@ body {
   margin-bottom: .75rem;
 }
 
+.contact .btn:hover {
+  background: #f2faef;
+}
+
 .contact__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -767,7 +771,17 @@ body {
   border-radius: 0;
   padding: .75em 1.5em;
   border: 3px solid #f2faef;
+}
+
+.btn--block a {
   color: #325971;
+  text-decoration: none;
+  -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.btn--block a:hover {
+  text-decoration: underline;
 }
 
 .navbar {
@@ -1302,6 +1316,10 @@ body {
 
 .contact .btn {
   margin-bottom: .75rem;
+}
+
+.contact .btn:hover {
+  background: #f2faef;
 }
 
 .contact__info {

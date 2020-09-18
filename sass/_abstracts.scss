@@ -58,15 +58,14 @@ $color-white: #f2f2f2;
 // FIXING LINKS WITH TOP FIXED HEADER 
 .anchor {
   position: relative;
-}
 
-.anchor a
-{
-  position: absolute;
-  left: 0px;
-  top: -88px;
+  & .target {
+    position: absolute;
+    left: 0px;
+    top: -87.5px;
 
-  @media screen and (min-width: 850px) {
-    top: -111.6px;
+    @media screen and (min-width: 850px) {
+      top: -111.6px;
+    }
   }
 }
