@@ -769,19 +769,20 @@ body {
 
 .btn--block {
   border-radius: 0;
-  padding: .75em 1.5em;
+  padding: .75em .75em;
   border: 3px solid #f2faef;
-}
-
-.btn--block a {
+  display: block;
+  max-width: 11rem;
   color: #325971;
   text-decoration: none;
   -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.btn--block a:hover {
+.btn--block:hover {
   text-decoration: underline;
+  color: #325971;
+  background: #f2faef;
 }
 
 .navbar {

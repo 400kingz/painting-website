@@ -1,8 +1,6 @@
 // BUTTON
 
 .btn {
-  // @extend .link;
-  
   padding: .5em 1.5em;
   cursor: pointer;
   font-weight: 600;
@@ -13,7 +11,6 @@
   text-decoration: none;
   text-align: center;
   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-
 
   &:link,
   &:visited {
@@ -29,20 +26,21 @@
     color: $color-primary;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   }
+}
 
-  &--block {
+.btn--block {
     border-radius: 0;
-    padding: .75em 1.5em;
+    padding: .75em .75em;
     border: 3px solid $color-primary;
+    display: block;
+    max-width: 11rem;
+    color: $color-secondary;
+    text-decoration: none;
+    transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 
-    a {
-       color: $color-secondary;
-       text-decoration: none;
-       transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-
-       &:hover {
-         text-decoration: underline;
-       }
+    &:hover {
+      text-decoration: underline;
+      color: $color-secondary;
+      background: $color-primary;
     }
-  }
 }
