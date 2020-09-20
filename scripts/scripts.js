@@ -1,6 +1,7 @@
 const burgerMenu = document.querySelector('#burger-menu');
 const navbarRight = document.querySelector('#navbarRight');
 const closeMenu = document.querySelector('#closeMenu');
+const navbarLinks = document.querySelectorAll('.navbar__link');
 
 burgerMenu.addEventListener('click', () => {
   if (navbarRight.classList.contains('hidden')) {
@@ -23,4 +24,15 @@ closeMenu.addEventListener('click', () => {
     closeMenu.classList.remove('reveal');
     closeMenu.classList.add('hidden');
   }
+});
+
+console.log(navbarLinks);
+
+navbarLinks.forEach(element => {
+  element.addEventListener('click', () => {
+    navbarRight.classList.add('hidden');
+    closeMenu.classList.add('hidden');
+    burgerMenu.classList.remove('hidden');
+    burgerMenu.classList.add('reveal');
+  });
 });
