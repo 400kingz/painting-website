@@ -216,6 +216,10 @@
       flex-direction: row;
     }
 
+    h5 {
+      font-weight: 400;
+    }
+
     &__item {
       display: flex;
       flex-direction: column;
@@ -330,6 +334,87 @@
     &__img--07 {
       grid-column: 2 / 5;
       grid-row: 7 / 10;
+    }
+  }
+}
+
+// TESTIMONIAL SECTION
+.testimonials {
+  height: 55rem;
+  background: $color-secondary;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  @media screen and (min-width: 1400px) {
+      height: 25rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+  &__header {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: $color-primary;
+
+    @media screen and (min-width: 1400px) {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__user {
+    background: $color-primary;
+    color: $color-secondary;
+    height: 12rem;
+    width: 22rem;
+    max-width: 100%;
+    margin-top: 3rem;
+    padding: 0 1rem .75rem 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+
+    @media screen and (min-width: 850px) {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      width: 25rem;
+      padding: 0 2rem .75rem 2rem;
+    }
+
+    @media screen and (min-width: 1400px) {
+      margin-top: 0;
+    }
+  }
+
+  &__icon {
+    max-width: 4rem;
+  }
+
+  &__content {
+    display: flex;
+    max-width: 14rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__quotation-mark {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 4rem;
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+
+  &__text {
+    
+
+    p {
+      margin-top: 1rem;
+      margin-bottom: .5rem;
     }
   }
 }
