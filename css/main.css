@@ -486,7 +486,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 2em 0;
+  padding: 1.5em 0;
   -ms-grid-column: 5;
   -ms-grid-column-span: 4;
   grid-column: 5 / 9;
@@ -1341,7 +1341,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 2em 0;
+  padding: 1.5em 0;
   -ms-grid-column: 5;
   -ms-grid-column-span: 4;
   grid-column: 5 / 9;
