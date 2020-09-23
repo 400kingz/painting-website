@@ -17,15 +17,28 @@ closeMenu.addEventListener('click', () => {
   closeMenu.classList.toggle('reveal');
 });
 
-if (mobileView.matches) {
-  navbarLinks.forEach(element => {
-    element.addEventListener('click', () => {
-      navbarRight.classList.toggle('reveal');
-      closeMenu.classList.toggle('reveal');
-      burgerMenu.classList.toggle('hidden');
+
+collapseNavbar(mobileView); // Call listener function at run time
+mobileView.addListener(collapseNavbar); // Attach listener function on state changes 
+
+
+function collapseNavbar(mobileView) {
+  if (mobileView.matches) {
+    navbarLinks.forEach(element => {
+      element.addEventListener('click', () => {
+        navbarRight.classList.toggle('reveal');
+        closeMenu.classList.toggle('reveal');
+        burgerMenu.classList.toggle('hidden');
+      });
     });
-  });
+  } else {
+    navbarLinks.forEach(element => {
+      element.addEventListener('click', () => {
+        // navbarRight.classList.toggle('reveal');
+        closeMenu.classList.toggle('hidden');
+        burgerMenu.classList.toggle('hidden');
+      });
+    });
+  }
 }
 
-myFunction(mobileView) // Call listener function at run time
-mobileView.addListener(myFunction) // Attach listener function on state changes 
