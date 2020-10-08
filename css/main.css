@@ -292,7 +292,7 @@ body {
 
 .hero {
   color: #325971;
-  margin-top: 5em;
+  margin-top: 88px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -301,7 +301,6 @@ body {
       grid-template-rows: repeat(12, 1fr);
   max-width: 100%;
   background: #f2faef;
-  height: 75vh;
   place-items: center;
 }
 
@@ -311,7 +310,7 @@ body {
 }
 
 .hero__text {
-  padding: 2rem;
+  padding: .5rem 2rem;
   -ms-grid-column: 1;
   -ms-grid-column-span: 11;
   grid-column: 1 / 12;
@@ -365,17 +364,14 @@ body {
 .services {
   background: #325971;
   color: #f2faef;
-  padding: 3em;
-  height: 1000px;
+  padding: 5em;
   margin: 0 auto;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -384,17 +380,14 @@ body {
           justify-content: center;
 }
 
-@media screen and (min-width: 850px) {
-  .services {
-    height: 33rem;
-  }
-}
-
 .services__header {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1.25em;
   width: 300px;
   text-align: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .services__overview {
@@ -410,6 +403,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -442,19 +437,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 300px;
-  height: 15rem;
+  max-width: 300px;
   text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.services__overview__item:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 850px) {
   .services__overview__item {
-    width: 30%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+    margin-bottom: 0;
   }
 }
 
 .services__overview__item__icon {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .services__overview__item__header {
@@ -1147,7 +1149,7 @@ body {
 
 .hero {
   color: #325971;
-  margin-top: 5em;
+  margin-top: 88px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -1156,7 +1158,6 @@ body {
       grid-template-rows: repeat(12, 1fr);
   max-width: 100%;
   background: #f2faef;
-  height: 75vh;
   place-items: center;
 }
 
@@ -1166,7 +1167,7 @@ body {
 }
 
 .hero__text {
-  padding: 2rem;
+  padding: .5rem 2rem;
   -ms-grid-column: 1;
   -ms-grid-column-span: 11;
   grid-column: 1 / 12;
@@ -1220,17 +1221,14 @@ body {
 .services {
   background: #325971;
   color: #f2faef;
-  padding: 3em;
-  height: 1000px;
+  padding: 5em;
   margin: 0 auto;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1239,17 +1237,14 @@ body {
           justify-content: center;
 }
 
-@media screen and (min-width: 850px) {
-  .services {
-    height: 33rem;
-  }
-}
-
 .services__header {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1.25em;
   width: 300px;
   text-align: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .services__overview {
@@ -1265,6 +1260,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -1297,19 +1294,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 300px;
-  height: 15rem;
+  max-width: 300px;
   text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.services__overview__item:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 850px) {
   .services__overview__item {
-    width: 30%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+    margin-bottom: 0;
   }
 }
 
 .services__overview__item__icon {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .services__overview__item__header {
