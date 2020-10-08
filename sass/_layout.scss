@@ -128,15 +128,12 @@
 // HERO LANDING PAGE
 .hero {
   color: $color-secondary;
-  // margin-top: 5em;
-  // padding: 1.5rem 0;
   margin-top: 88px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   max-width: 100%;
   background: $color-primary;
-  // height: 75vh;
   place-items: center;
 
   &__btn {
@@ -145,7 +142,8 @@
   }
 
   &__text {
-    padding: .5rem 2rem;
+    padding: 0 2rem;
+    margin-top: -1rem;
     grid-column: 1 / 12;
     grid-row: 2 / 12;
     
@@ -196,7 +194,6 @@
   justify-content: center;
 
   &__header {
-    // margin-top: 1em;
     margin-bottom: 1.5em;
     width: 300px;
     text-align: center;
@@ -220,6 +217,11 @@
 
     h5 {
       font-weight: 400;
+      font-size: 1rem;
+
+      @media screen and (min-width: 850px) {
+        font-size: 1.25rem;
+      }
     }
 
     &__item {
@@ -247,6 +249,11 @@
 
       &__header {
         margin-bottom: .5rem;
+        font-size: 1.5rem;
+
+        @media screen and (min-width: 850px) {
+          font-size: 1.875rem;
+        }
       }
     }
   }
