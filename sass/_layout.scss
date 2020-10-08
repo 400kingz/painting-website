@@ -100,6 +100,7 @@
 
   #burger-menu {
     display: flex;
+    z-index: 150;
 
     @media screen and (min-width: 850px) {
       display: none;
@@ -108,11 +109,11 @@
 
   #closeMenu {
     display: none;
+    z-index: 150;
   }
 
   &__menu-icon {
     @include link;
-    z-index: 101;
     max-width: 1.75rem;
     font-weight: 600;
     cursor: pointer;
