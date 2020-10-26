@@ -506,7 +506,14 @@ body {
   text-align: center;
   display: block;
   width: 100%;
-  padding-bottom: 2em;
+  padding-bottom: 1.25em;
+}
+
+@media screen and (min-width: 850px) {
+  .gallery__header {
+    padding-bottom: 1.75em;
+    padding-top: .5em;
+  }
 }
 
 .column {
@@ -542,7 +549,6 @@ body {
 }
 
 .testimonials {
-  height: 55rem;
   background: #325971;
   max-width: 100%;
   display: -webkit-box;
@@ -558,11 +564,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 4em 5vw 3em 5vw;
+}
+
+@media screen and (min-width: 850px) {
+  .testimonials {
+    padding: 6em 3vw 3em 3vw;
+  }
 }
 
 @media screen and (min-width: 1400px) {
   .testimonials {
-    height: 30rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -579,20 +591,19 @@ body {
   color: #f2faef;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 850px) {
   .testimonials__header {
-    margin-top: 1.5rem;
+    margin-bottom: .5em;
   }
 }
 
 .testimonials__user {
   background: #f2faef;
   color: #325971;
-  height: 12rem;
   width: 21rem;
   max-width: 100%;
   margin-top: 3rem;
-  padding: 0 1rem .75rem 1.75rem;
+  padding: .5rem 1rem 1.25rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,13 +621,13 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
     width: 25rem;
-    padding: 0 2rem .75rem 2rem;
+    padding: .75rem 2rem 1.75rem 2rem;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .testimonials__user {
-    margin-top: 0;
+    margin-top: 2em;
   }
 }
 
@@ -654,14 +665,14 @@ body {
 .contact {
   color: #f2faef;
   background: #325971;
-  height: 55rem;
+  padding: 2em 0 10vh 0;
   max-width: 100%;
 }
 
 .contact__header {
   display: block;
   text-align: center;
-  padding: 2em 0 .75em 0;
+  margin-bottom: 1.25em;
 }
 
 .contact__sub-header {
@@ -691,6 +702,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contact__info > div {
+  margin-top: 2.5em;
 }
 
 .contact__social {
@@ -727,6 +742,14 @@ body {
   height: 12rem;
 }
 
+.contact table {
+  color: currentColor;
+}
+
+.contact th {
+  text-align: left;
+}
+
 .contact td {
   text-align: right;
   padding-left: 2.25rem;
@@ -734,7 +757,6 @@ body {
 
 @media screen and (min-width: 850px) {
   .contact {
-    height: 35rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -748,10 +770,11 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 12vh 1vw;
   }
   .contact__header {
     padding: 0;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
   .contact__info {
     height: 15rem;
@@ -1308,7 +1331,14 @@ body {
   text-align: center;
   display: block;
   width: 100%;
-  padding-bottom: 2em;
+  padding-bottom: 1.25em;
+}
+
+@media screen and (min-width: 850px) {
+  .gallery__header {
+    padding-bottom: 1.75em;
+    padding-top: .5em;
+  }
 }
 
 .column {
@@ -1344,7 +1374,6 @@ body {
 }
 
 .testimonials {
-  height: 55rem;
   background: #325971;
   max-width: 100%;
   display: -webkit-box;
@@ -1360,11 +1389,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 4em 5vw 3em 5vw;
+}
+
+@media screen and (min-width: 850px) {
+  .testimonials {
+    padding: 6em 3vw 3em 3vw;
+  }
 }
 
 @media screen and (min-width: 1400px) {
   .testimonials {
-    height: 30rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1381,20 +1416,19 @@ body {
   color: #f2faef;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 850px) {
   .testimonials__header {
-    margin-top: 1.5rem;
+    margin-bottom: .5em;
   }
 }
 
 .testimonials__user {
   background: #f2faef;
   color: #325971;
-  height: 12rem;
   width: 21rem;
   max-width: 100%;
   margin-top: 3rem;
-  padding: 0 1rem .75rem 1.75rem;
+  padding: .5rem 1rem 1.25rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1412,13 +1446,13 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
     width: 25rem;
-    padding: 0 2rem .75rem 2rem;
+    padding: .75rem 2rem 1.75rem 2rem;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .testimonials__user {
-    margin-top: 0;
+    margin-top: 2em;
   }
 }
 
@@ -1456,14 +1490,14 @@ body {
 .contact {
   color: #f2faef;
   background: #325971;
-  height: 55rem;
+  padding: 2em 0 10vh 0;
   max-width: 100%;
 }
 
 .contact__header {
   display: block;
   text-align: center;
-  padding: 2em 0 .75em 0;
+  margin-bottom: 1.25em;
 }
 
 .contact__sub-header {
@@ -1493,6 +1527,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contact__info > div {
+  margin-top: 2.5em;
 }
 
 .contact__social {
@@ -1529,6 +1567,14 @@ body {
   height: 12rem;
 }
 
+.contact table {
+  color: currentColor;
+}
+
+.contact th {
+  text-align: left;
+}
+
 .contact td {
   text-align: right;
   padding-left: 2.25rem;
@@ -1536,7 +1582,6 @@ body {
 
 @media screen and (min-width: 850px) {
   .contact {
-    height: 35rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1550,10 +1595,11 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 12vh 1vw;
   }
   .contact__header {
     padding: 0;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
   .contact__info {
     height: 15rem;
