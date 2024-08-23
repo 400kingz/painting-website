@@ -1,199 +1,35 @@
-<!DOCTYPE html svg PUBLIC “-//W3C//DTD SVG 1.1//EN”
-“http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd”>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <title>A+ Painting & Contracting | Premier Services in Grand Forks</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./sass/main.scss">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Loader</title>
+    <style>
+        #loader {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8) url('loader.gif') no-repeat center center;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
-  <nav role="navigation" aria-label="main menu">
-    <ul class="navbar">
-      <div class="navbar__left">
-        <li><a href="./" class="navbar__brand">A+ Painting & Contracting</a></li>
-        <svg class="navbar__menu-icon" id="burger-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        <svg class="navbar__menu-icon" id="closeMenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </div>
-      <div class="navbar__right" id="navbarRight">
-        <li><a href="#services" class="navbar__link link">Our Services</a></li>
-        <li><a href="#works" class="navbar__link link">Past Works</a></li>
-        <li><a href="#testimonials" class="navbar__link link">Testimonials</a></li>
-      </div>
-      <li><a href="#contact" class="btn">Get a free quote</a></li>
-    </ul>
-  </nav>
+    <div id="loader"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var loader = document.getElementById('loader');
+            loader.style.display = 'block';
 
-  <main>
-    <section class="hero anchor">
-      <a name="about" class="target">&nbsp;</a>
-      <div class="hero__text">
-        <h1 class="hero__text__header"><span class="plus">A+</span> Painting & Contracting: Premier Services in Grand Forks</h1>
-        <h3 class="hero__text__sub-header">Discover top-tier painting and contracting services in Grand Forks, North Dakota. Reach out for a complimentary estimate now!</h3>
-        <a href="#services" class="hero__btn btn">Check out our services</a>
-      </div>
-      <img src="./img/A PLUS PAINTING brush.png" class="hero__image"" alt="four paintbrushes with color">
-    </section>
-
-    <section class="services anchor">
-      <a name="services" class="target">&nbsp;</a>
-      <h2 class="services__header">
-        Our Expert Services Tailored for Grand Forks
-      </h2>
-      <section class="services__overview">
-        <div class="services__overview__item">
-          <i class="fas fa-home fa-3x services__overview__item__icon"></i>
-          <h3 class="services__overview__item__header">Exterior Painting Excellence</h3>
-          <h5>Elevate your home's curb appeal with our superior exterior painting services. We employ premium materials for enduring results.</h5>
-        </div>
-        <div class="services__overview__item">
-          <i class="fas fa-paint-roller fa-3x services__overview__item__icon"></i>
-          <h3 class="services__overview__item__header">Interior Painting Mastery</h3>
-          <h5>Revitalize your interior with our meticulous painting services. We prioritize detail and quality to craft inviting spaces.</h5>
-        </div>
-        <div class="services__overview__item">
-          <i class="fas fa-chair fa-3x services__overview__item__icon"></i>
-          <h3 class="services__overview__item__header">Comprehensive Contracting Solutions</h3>
-          <h5>Whether it's minor fixes or extensive remodeling, our contracting services meet all your needs. We guarantee superior craftsmanship and client satisfaction.</h5>
-        </div>
-      </section>
-    </section>
-
-    <section class="gallery anchor">
-      <a name="works" class="target">&nbsp;</a>
-      <h2 class="gallery__header">Past Works</h2>
-      <div class="column">
-        <img src="./img/white-and-brown-house.jpg" alt="white and brown painted house" class="gallery__img">
-        <img src="./img/pure-white-kitchen-interior.jpg" alt="modern pure white kitchen interior" class="gallery__img">
-        <img src="./img/brown-kitchen-interior.jpg" alt="brown kitchen interior" class="gallery__img">
-      </div>
-      <div class="column">
-        <img src="./img/white-and-red-house.jpg" alt="white and red painted house" class="gallery__img">
-        <img src="./img/white-and-brown-kitchen-interior.jpg" alt="white and brown kitchen interior" class="gallery__img">
-      </div>
-      <div class="column">
-        <img src="./img/blue-and-yellow-house.jpg" alt="blue and yellow painted house" class="gallery__img">
-        <img src="./img/white-and-blue-house.jpg" alt="white and blue painted house" class="gallery__img ">
-      </div>
-    </section>
-
-    <section class="testimonials anchor">
-      <a name="testimonials" class="target">&nbsp;</a>
-      <h2 class="testimonials__header">Testimonials</h2>
-      <div class="testimonials__user">
-        <div class="testimonials__content">
-          <p class="testimonials__quotation-mark">&quot;</p>
-          <div class="testimonials__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi.</p>
-            <h5>Jane Poe</h5>
-          </div>
-        </div>
-        <svg class="testimonials__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      </div>
-
-      <div class="testimonials__user">
-        <div class="testimonials__content">
-          <p class="testimonials__quotation-mark">&quot;</p>
-          <div class="testimonials__text">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, amet?</p>
-            <h5>Mark Moe</h5>
-          </div>
-        </div>
-        <svg class="testimonials__icon" xmlns="http://www.w3.org/2000/svg" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      </div>
-
-      <div class="testimonials__user">
-        <div class="testimonials__content">
-          <p class="testimonials__quotation-mark">&quot;</p>
-          <div class="testimonials__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, quae.</p>
-            <h5>John Doe</h5>
-          </div>
-        </div>
-        <svg class="testimonials__icon" xmlns="http://www.w3.org/2000/svg" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      </div>
-    </section>
-
-    <section class="contact anchor">
-      <a name="contact" class="target">&nbsp;</a>
-      <h2 class="contact__header">Contact A+ Painting & Contracting</h2>
-      <div class="contact__info">
-        <div class="contact__group">
-          <div class="contact__phone">
-          	<h4 class="contact__sub-header">Get a Free Quote</h4>
-            <a href="tel:+1123-456-7890" class="btn btn--block">CALL NOW</a>
-          	<p>(123) 456 - 7890</p>
-          </div>
-          <div class="contact__social">
-            <i class="fab fa-twitter fa-2x contact__social__icon"></i>
-            <i class="fab fa-instagram fa-2x contact__social__icon"></i>
-            <i class="fab fa-facebook-square fa-2x contact__social__icon"></i>
-          </div>
-        </div>
-        <div class="contact__address">
-          <h4 class="contact__sub-header">Address</h4>
-          <a target="_blank" class="btn btn--block" href="https://goo.gl/maps/W71uvvLT9ma69t3B7">GET DIRECTIONS</a>
-          <p>Random Drive</p>
-          <p>Corpus Christi, TX 12345</p>
-          <p>USA</p>
-        </div>
-        <div class="contact__hours">
-          <h4 class="contact__sub-header">Business Hours</h4>
-          <table>
-            <tr>
-              <th>SUNDAY</th>
-              <td>CLOSED</td>
-            </tr>
-            <tr>
-              <th>MONDAY</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>TUESDAY</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>WEDNESDAY</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>THURSDAY</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>FRIDAY</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>SATURDAY</th>
-              <td>CLOSED</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script src="https://kit.fontawesome.com/dcb68dae8b.js" crossorigin="anonymous"></script>
-  <script src="./scripts/scripts.js"></script>
+            window.addEventListener('load', function() {
+                loader.style.display = 'none';
+            });
+        });
+    </script>
+    <h1>Welcome to My Page</h1>
+    <!-- Your page content goes here -->
 </body>
 </html>
