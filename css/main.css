@@ -66,7 +66,7 @@ body {
   top: 0;
   z-index: 100;
   width: 100%;
-  background: #f2faef;
+  background: #565656;
   padding: 2em 1.5em 1.5em 1.5em;
   font-size: 1rem;
   display: -webkit-box;
@@ -172,21 +172,21 @@ body {
 
 .navbar__brand:link, .navbar__brand:visited {
   text-decoration: none;
-  color: #325971;
+  color: #de3644;
   -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .navbar__brand:focus {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar__brand:hover {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar__brand:active {
-  color: #685131;
+  color: #de3644;
 }
 
 @media screen and (min-width: 850px) {
@@ -204,21 +204,21 @@ body {
 
 .navbar .link:link, .navbar .link:visited {
   text-decoration: none;
-  color: #325971;
+  color: #de3644;
   -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .navbar .link:focus {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar .link:hover {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar .link:active {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar .link:last-child {
@@ -264,26 +264,26 @@ body {
   max-width: 1.75rem;
   font-weight: 600;
   cursor: pointer;
-  color: #325971;
+  color: #de3644;
 }
 
 .navbar__menu-icon:link, .navbar__menu-icon:visited {
   text-decoration: none;
-  color: #325971;
+  color: #de3644;
   -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .navbar__menu-icon:focus {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar__menu-icon:hover {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar__menu-icon:active {
-  color: #685131;
+  color: #de3644;
 }
 
 @media screen and (min-width: 850px) {
@@ -293,7 +293,7 @@ body {
 }
 
 .hero {
-  color: #325971;
+  color: #f2faef;
   margin-top: 88px;
   display: -ms-grid;
   display: grid;
@@ -302,7 +302,7 @@ body {
   -ms-grid-rows: (1fr)[12];
       grid-template-rows: repeat(12, 1fr);
   max-width: 100%;
-  background: #f2faef;
+  background: #565656;
   place-items: center;
   padding: 0 1em;
 }
@@ -359,7 +359,6 @@ body {
     -ms-grid-row: 1;
     -ms-grid-row-span: 11;
     grid-row: 1 / 12;
-    height: auto;
     max-width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -367,12 +366,12 @@ body {
 }
 
 .hero__btn {
-  color: #325971;
+  color: #de3644;
   margin-top: 1.5rem;
 }
 
 .services {
-  background: #325971;
+  background: #565656;
   color: #f2faef;
   padding: 5em 3em;
   margin: 0 auto;
@@ -497,12 +496,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 4px;
-  background: #f2faef;
+  background: #565656;
   padding: 4rem 2rem;
 }
 
 .gallery__header {
-  color: #325971;
+  color: #f2faef;
   text-align: center;
   display: block;
   width: 100%;
@@ -549,7 +548,7 @@ body {
 }
 
 .testimonials {
-  background: #325971;
+  background: #565656;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,7 +598,7 @@ body {
 
 .testimonials__user {
   background: #f2faef;
-  color: #325971;
+  color: #de3644;
   width: 21rem;
   max-width: 100%;
   margin-top: 3rem;
@@ -664,7 +663,7 @@ body {
 
 .contact {
   color: #f2faef;
-  background: #325971;
+  background: #de3644;
   padding: 2em 0 10vh 0;
   max-width: 100%;
 }
@@ -822,7 +821,7 @@ body {
 .footer {
   padding: 2.5em 2em;
   background: #f2faef;
-  color: #325971;
+  color: #de3644;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -843,7 +842,7 @@ body {
   padding: .5em 1.5em;
   cursor: pointer;
   font-weight: 600;
-  border: 3px solid #325971;
+  border: 3px solid #de3644;
   background: #f2faef;
   border-radius: 100px;
   text-transform: uppercase;
@@ -854,15 +853,15 @@ body {
 }
 
 .btn:link, .btn:visited {
-  color: #325971;
+  color: #de3644;
 }
 
 .btn:focus {
-  color: #685131;
+  color: #de3644;
 }
 
 .btn:hover {
-  background: #325971;
+  background: #de3644;
   color: #f2faef;
   -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
@@ -874,7 +873,7 @@ body {
   border: 3px solid #f2faef;
   display: block;
   max-width: 11rem;
-  color: #325971;
+  color: #de3644;
   text-decoration: none;
   -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -882,7 +881,7 @@ body {
 
 .btn--block:hover {
   text-decoration: underline;
-  color: #325971;
+  color: #de3644;
   background: #f2faef;
 }
 
@@ -891,7 +890,7 @@ body {
   top: 0;
   z-index: 100;
   width: 100%;
-  background: #f2faef;
+  background: #565656;
   padding: 2em 1.5em 1.5em 1.5em;
   font-size: 1rem;
   display: -webkit-box;
@@ -997,21 +996,21 @@ body {
 
 .navbar__brand:link, .navbar__brand:visited {
   text-decoration: none;
-  color: #325971;
+  color: #f2faef;
   -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .navbar__brand:focus {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar__brand:hover {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar__brand:active {
-  color: #685131;
+  color: #de3644;
 }
 
 @media screen and (min-width: 850px) {
@@ -1029,21 +1028,21 @@ body {
 
 .navbar .link:link, .navbar .link:visited {
   text-decoration: none;
-  color: #325971;
+  color: #f2faef;
   -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .navbar .link:focus {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar .link:hover {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar .link:active {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar .link:last-child {
@@ -1089,26 +1088,26 @@ body {
   max-width: 1.75rem;
   font-weight: 600;
   cursor: pointer;
-  color: #325971;
+  color: #de3644;
 }
 
 .navbar__menu-icon:link, .navbar__menu-icon:visited {
   text-decoration: none;
-  color: #325971;
+  color: #de3644;
   -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .navbar__menu-icon:focus {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar__menu-icon:hover {
-  color: #685131;
+  color: #de3644;
 }
 
 .navbar__menu-icon:active {
-  color: #685131;
+  color: #de3644;
 }
 
 @media screen and (min-width: 850px) {
@@ -1118,7 +1117,7 @@ body {
 }
 
 .hero {
-  color: #325971;
+  color: #f2faef;
   margin-top: 88px;
   display: -ms-grid;
   display: grid;
@@ -1127,7 +1126,7 @@ body {
   -ms-grid-rows: (1fr)[12];
       grid-template-rows: repeat(12, 1fr);
   max-width: 100%;
-  background: #f2faef;
+  background: #565656;
   place-items: center;
   padding: 0 1em;
 }
@@ -1165,10 +1164,12 @@ body {
 
 .hero__text__header {
   margin-bottom: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .hero__text__sub-header {
   font-weight: 600;
+  font-size: 1.25rem;
 }
 
 .hero__image {
@@ -1192,12 +1193,12 @@ body {
 }
 
 .hero__btn {
-  color: #325971;
+  color: #de3644;
   margin-top: 1.5rem;
 }
 
 .services {
-  background: #325971;
+  background: #565656;
   color: #f2faef;
   padding: 5em 3em;
   margin: 0 auto;
@@ -1322,12 +1323,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 4px;
-  background: #f2faef;
+  background: #565656;
   padding: 4rem 2rem;
 }
 
 .gallery__header {
-  color: #325971;
+  color: #f2faef;
   text-align: center;
   display: block;
   width: 100%;
@@ -1374,7 +1375,7 @@ body {
 }
 
 .testimonials {
-  background: #325971;
+  background: #565656;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1424,7 +1425,7 @@ body {
 
 .testimonials__user {
   background: #f2faef;
-  color: #325971;
+  color: #de3644;
   width: 21rem;
   max-width: 100%;
   margin-top: 3rem;
@@ -1489,7 +1490,7 @@ body {
 
 .contact {
   color: #f2faef;
-  background: #325971;
+  background: #565656;
   padding: 2em 0 10vh 0;
   max-width: 100%;
 }
@@ -1580,6 +1581,11 @@ body {
   padding-left: 2.25rem;
 }
 
+.plus {
+  font-size: 10.5rem;
+  color: #de3644;
+}
+
 @media screen and (min-width: 850px) {
   .contact {
     display: -webkit-box;
@@ -1647,7 +1653,7 @@ body {
 .footer {
   padding: 2.5em 2em;
   background: #f2faef;
-  color: #325971;
+  color: #de3644;
   display: -ms-grid;
   display: grid;
   place-items: center;
