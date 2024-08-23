@@ -2,7 +2,6 @@
 
 html
 {
-	font-size: 3vh;
 	
 	--color-hair: #6D4C41;
 	--color-hair-light: #795548;
@@ -48,15 +47,7 @@ html
 	--size-legs: 9rem;
 }
 
-html, body
-{
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-body
+.div-main
 {
 	display: flex;
 	flex-direction: row-reverse;
