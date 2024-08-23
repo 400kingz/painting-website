@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const navbar = document.querySelector('.navbar');
 
-
+    // Add transition for smooth effect
+    navbar.style.transition = 'background-color 300ms';
 
     window.addEventListener('scroll', function() {
 
