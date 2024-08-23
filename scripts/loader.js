@@ -26,5 +26,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     loader.style.transition = 'transform 1s ease-in-out';
 
+    // Add a loading spinner or text if desired
+    loader.innerHTML = '<div>Loading...</div>';
 
+    document.body.appendChild(loader);
 
+    // Simulate page load completion after 3 seconds
+    setTimeout(() => {
+        loader.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 1000); // Wait for the transition to complete before hiding
+    }, 3000);
+});
